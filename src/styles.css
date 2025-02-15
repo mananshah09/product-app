@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensures Cards Have Equal Height */
+.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+/* Button Styling */
+.btn-outline-primary {
+  border-radius: 8px;
+}
+
+/* Ensures Product Detail Page is Centered */
+.product-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

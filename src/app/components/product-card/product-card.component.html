@@ -1,0 +1,17 @@
+<div class="card h-100 shadow-sm border-0">
+  <div class="card-body d-flex flex-column p-4">
+    <h5 class="card-title text-dark fw-bold mb-2">{{ product?.name }}</h5>
+    <p class="card-text text-muted mb-3">
+      {{ product?.description }}
+    </p>
+    <p class="fs-6 mb-4">
+      <strong>Price:</strong>
+      <span class="text-success">${{ product?.price }}</span>
+    </p>
+    <button
+      class="btn btn-outline-primary mt-auto"
+      (click)="onViewDetails()">
+      View Details
+    </button>
+  </div>
+</div>

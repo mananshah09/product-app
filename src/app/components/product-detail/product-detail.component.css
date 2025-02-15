@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;  /* Ensures the card takes the correct width */
+  max-width: 600px;  /* Prevents it from being too wide */
+}

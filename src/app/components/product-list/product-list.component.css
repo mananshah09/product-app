@@ -1,0 +1,40 @@
+/* Container Spacing */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Product Cards */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #ffffff;
+  padding: 20px; /* ✅ Added padding for better spacing */
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Number Styling */
+.product-number {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #6c757d; /* Muted Gray */
+  margin-bottom: 5px;
+}
+
+/* Product Title */
+.card-title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 10px; /* ✅ Added margin for better spacing */
+}
+
+/* Button Styling */
+.btn-primary {
+  border-radius: 8px;
+  padding: 8px 12px; /* ✅ Improved button padding */
+}

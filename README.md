@@ -1,59 +1,142 @@
-# ProductApp
+# 🛍️ Product App - Angular Assessment
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+This is an **Angular-based product listing application** that allows users to **view a list of products**, navigate to **product details**, and experience smooth **routing and navigation**. The project follows **Angular best practices** and includes **Bootstrap for styling**.
 
-## Development server
+This application can be run **locally** or inside a **Docker container** for easy deployment.
 
-To start a local development server, run:
+---
 
+## **🚀 Getting Started - Running Locally**
+Follow these **step-by-step instructions** to set up and run the project on your local machine.
+
+### **🔹 1️⃣ Prerequisites**
+Before running the project, ensure you have the following installed:
+
+✅ **Node.js (LTS Version)** → [Download Here](https://nodejs.org/)  
+✅ **Angular CLI** → Install it globally using:  
+   ```bash
+   npm install -g @angular/cli
+   ```
+✅ **Git** → [Download Here](https://git-scm.com/)  
+
+---
+
+### **🔹 2️⃣ Clone the Repository**
+Open a terminal and run the following command to **clone the project** from GitHub:
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/product-app.git
+cd product-app
+```
+
+---
+
+### **🔹 3️⃣ Install Dependencies**
+Run the following command inside the project folder to install required **Node modules**:
+```bash
+npm install
+```
+This will install all necessary dependencies for the project.
+
+---
+
+### **🔹 4️⃣ Start the Angular Development Server**
+Run the following command to **start the Angular application**:
 ```bash
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+Once the server starts successfully, you should see an output like:
+```
+✔ Compiled successfully.
+✔ Angular Live Development Server is listening on localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
+### **🔹 5️⃣ Open the Application in a Browser**
+Once the Angular server is running, open your browser and visit:
+```
+http://localhost:4200
+```
+You should now see the **Product List Page** with all products displayed. 🎉
+
+---
+
+### **🛠️ 6️⃣ Stopping the Angular Server**
+To stop the running Angular server, go to the terminal where it's running and press:
+```
+CTRL + C
+```
+Then confirm with **`Y`** if prompted.
+
+---
+
+## **🐳 Running with Docker**
+If you want to **run the project inside Docker**, follow these steps:
+
+### **🔹 1️⃣ Build & Start the Docker Container**
+Run the following command inside the project folder:
 ```bash
-ng generate --help
+docker-compose up --build
+```
+This command will:
+✔ **Build the Angular app** inside a Docker container  
+✔ **Start the development server**  
+
+---
+
+### **🔹 2️⃣ Open the Application in Browser**
+Once the container is running, visit:
+```
+http://localhost:4200
+```
+You should now see the application running inside a **Docker container**.
+
+---
+
+### **🔹 3️⃣ Stop the Running Docker Container**
+To stop the running Docker container, use:
+```bash
+docker-compose down
+```
+This will **stop and remove** the container.
+
+---
+
+## **📂 Project Structure**
+```
+product-app/
+│── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── product-list/  → Displays all products
+│   │   │   ├── product-card/  → Individual product card
+│   │   │   ├── product-detail/ → Product detail page
+│   │   ├── services/
+│   │   │   ├── product.service.ts → Handles data fetching with RxJS
+│   │   ├── app.routes.ts → Angular routing configuration
+│   ├── assets/ → Static files (e.g., images, icons)
+│── angular.json → Angular project settings
+│── package.json → Project dependencies
+│── docker-compose.yml → Docker configuration
+│── README.md → Project documentation
 ```
 
-## Building
+---
 
-To build the project run:
+## **📎 Technologies Used**
+✔ **Angular 16+**  
+✔ **RxJS Observables**  
+✔ **Bootstrap 5**  
+✔ **TypeScript**  
+✔ **SCSS/CSS for styling**  
+✔ **Docker**  
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## **📧 Contact**
+For any issues or questions, feel free to **reach out via GitHub Issues**.
 
-## Running unit tests
+🔗 **GitHub Repository**: [View on GitHub](https://github.com/YOUR_GITHUB_USERNAME/product-app)  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+🚀 **Happy Coding!** 😊
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

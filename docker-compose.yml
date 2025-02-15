@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  angular-app:
+    build: .
+    container_name: angular-container
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules  # Prevents overwriting dependencies
+    command: ["ng", "serve", "--host", "0.0.0.0"]
