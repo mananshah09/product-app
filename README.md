@@ -133,10 +133,3 @@ product-app/
 
 ---
 
-## **📧 Contact**
-For any issues or questions, feel free to **reach out via GitHub Issues**.
-
-🔗 **GitHub Repository**: [View on GitHub](https://github.com/YOUR_GITHUB_USERNAME/product-app)  
-
-🚀 **Happy Coding!** 😊
-
